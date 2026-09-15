@@ -25,6 +25,17 @@ from pydub import AudioSegment
 from aisha_ai import AishaClient
 from rvc_python.infer import RVCInference
 
+# --- FIX: rvc-python kutubxonasi CPU rejimida ishga tushganda o'zining
+# konfiguratsiya shablon fayllarini (site-packages ichida) diskka qayta
+# yozishga urinadi. Streamlit Community Cloud'da bu katalog faqat o'qish
+# uchun bo'lgani sababli PermissionError: [Errno 13] beradi.
+# Bu yozish faqat model TRENING qilishda kerak bo'ladigan shablonlarni
+# yangilaydi va bizning inference (tayyor modeldan ovoz yaratish)
+# ishimizga umuman ta'sir qilmaydi, shuning uchun uni xavfsiz o'chirib
+# qo'yish mumkin.
+from rvc_python.configs.config import Config as _RVCConfig
+_RVCConfig.use_fp32_config = lambda self: None
+
 st.set_page_config(page_title="Mening Ovozim", page_icon="🎙️")
 
 # ============== SOZLAMALAR ==============
