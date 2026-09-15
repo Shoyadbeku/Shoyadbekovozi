@@ -2,4 +2,4 @@ streamlit
 aisha-ai
 rvc-python
 pydub
-setuptools
+setuptools<82
