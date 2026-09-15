@@ -1,7 +1,4 @@
-fastapi
-uvicorn
-python-multipart
+streamlit
+aisha-ai
 rvc-python
-torch
-gdown
-setuptools<81
+pydub
