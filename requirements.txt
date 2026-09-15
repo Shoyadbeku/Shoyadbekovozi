@@ -1,7 +1,5 @@
 setuptools<82
-https://github.com/One-sixth/fairseq/archive/main.zip
 streamlit
 aisha-ai
 rvc-python
 pydub
-
