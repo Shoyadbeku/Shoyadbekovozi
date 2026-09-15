@@ -4,3 +4,4 @@ python-multipart
 rvc-python
 torch
 gdown
+setuptools
