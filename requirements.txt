@@ -1,5 +1,0 @@
-setuptools<82
-streamlit
-aisha-ai
-rvc-python
-pydub

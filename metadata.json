@@ -1,0 +1,10 @@
+{
+  "name": "Mening Ovozim",
+  "description": "Matndan nutqqa — Aisha AI va RVC ovoz sintezi web-ilovasi",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
